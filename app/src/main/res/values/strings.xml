@@ -56,6 +56,18 @@
     <string name="save000">收藏</string>
     <string name="grouppicture000">群组图片</string>
     <string name="groups010">组</string>
+    <string name="title_activity_test">testActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
 
-
+    <!-- This is for left map-->
+    <string name="Input">Input you want to find</string>
+    <string name="start">Input Start</string>
+    <string name="end">Input  End</string>
+    <string name="search">Search</string>
+    <string name="route">Route</string>
+    <string name="switches">Switch</string>
+    <string name="mapmode">Map mode</string>
+    <string name="hotmap">hotmap</string>
 </resources>

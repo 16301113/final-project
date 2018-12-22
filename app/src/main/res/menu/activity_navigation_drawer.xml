@@ -3,20 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/home_filled"
-            android:title="@string/home" />
-        <item
-            android:id="@+id/nav_schedule"
-            android:icon="@drawable/time_fill"
-            android:title="@string/schedule" />
-        <item
-            android:id="@+id/nav_favorite"
-            android:icon="@drawable/favorites_fill"
-            android:title="@string/favorites" />
-    </group>
+    <!--<group android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/nav_home"-->
+            <!--android:icon="@drawable/home_filled"-->
+            <!--android:title="@string/home" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_schedule"-->
+            <!--android:icon="@drawable/time_fill"-->
+            <!--android:title="@string/schedule" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_favorite"-->
+            <!--android:icon="@drawable/favorites_fill"-->
+            <!--android:title="@string/favorites" />-->
+    <!--</group>-->
 
     <item android:title="@string/communicate">
         <menu>

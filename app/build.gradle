@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword '123456'
+            storeFile file('C:/Users/CLANNAD/Desktop/yue.jks')
+            storePassword '123456'
+        }
+    }
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.sports.sportclub"
@@ -10,6 +18,13 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
+        javaCompileOptions {
+            // 显式声明支持注解
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+        signingConfig signingConfigs.config
     }
     buildTypes {
         release {
@@ -20,6 +35,14 @@ android {
     compileOptions {
         targetCompatibility 1.8
         sourceCompatibility 1.8
+    }
+    productFlavors {
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
     }
 }
 
@@ -53,8 +76,7 @@ dependencies {
     implementation 'com.android.support:cardview-v7:26.1.0'
     implementation 'com.android.support:gridlayout-v7:26.1.0'
     implementation 'com.android.support:recyclerview-v7:26.1.0'
-
-    implementation files('libs/BaiduLBS_AndroidSDK_Lib/libs/BaiduLBS_Android.jar')
-    implementation files('libs/BaiduLBS_AndroidSDK_Lib/libs/IndoorscapeAlbumPlugin.jar')
-
+    //    implementation files('libs/onsdk_all.aar')
+    //    compile files('aar')
+    implementation files('libs/BaiduLBS_Android.jar')
 }
