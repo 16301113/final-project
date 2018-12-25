@@ -25,5 +25,6 @@
     <color name="colorBlack">#000000</color>
     <color name="colorHalfTransparentBlack">#40000000</color>
     <color name="colorHalfTransparentWhite">#40FFFFFF</color>
+    <color name="colorButton1">#E03636</color>
 
 </resources>

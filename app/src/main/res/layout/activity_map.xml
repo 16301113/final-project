@@ -33,57 +33,171 @@
     <!-- android:layout_marginLeft="15dp" -->
     <!-- android:text="@string/item_info"/> -->
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="200dp">
-        <TextView
-            android:id="@+id/position"
-            android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/start"/>
-        <EditText
-            android:id="@+id/target"
-            android:layout_width="90dp"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:id="@+id/position2"
-            android:layout_marginLeft="20dp"
-            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rec_shape1">
+
+            <TextView
+                android:id="@+id/position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="serif"
+                android:text="Start"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/target"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:id="@+id/buttonserach"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/sousuo" />
+
+            <TextView
+                android:id="@+id/position2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="serif"
+                android:text="End"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/endpoint"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/end"/>
-        <AutoCompleteTextView
-            android:id="@+id/endpoint"
-            android:layout_width="100dp"
-            android:layout_height="50dp"/>
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
+
+    <GridLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/buttonserach"
-            android:layout_width="80dp"
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/search"/>
-        <Button
-            android:id="@+id/buttonroute"
-            android:layout_width="70dp"
+            android:orientation="vertical"
+            android:background="@drawable/button_shape5"
+            android:layout_columnWeight="1">
+
+            <Button
+                android:id="@+id/buttonroute"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/luxianchaxun"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:text="@string/route"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/route"/>
-        <Button
-            android:id="@+id/buttonswitch"
-            android:layout_width="77dp"
+            android:orientation="vertical"
+            android:background="@drawable/button_shape2"
+            android:layout_columnWeight="1">
+
+            <Button
+                android:id="@+id/buttonswitch"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/qiehuan"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:text="@string/switches"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/switches"/>
-        <Button
-            android:id="@+id/buttonchoose_map_mode"
-            android:layout_width="97dp"
+            android:orientation="vertical"
+            android:background="@drawable/button_shape3"
+            android:layout_columnWeight="1">
+
+            <Button
+                android:id="@+id/buttonchoose_map_mode"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ditu"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:text="@string/mapmode"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/mapmode"/>
-        <Button
-            android:id="@+id/button_hot_map"
-            android:layout_width="83dp"
-            android:layout_height="wrap_content"
-            android:text="@string/hotmap"/>
-    </LinearLayout>
+            android:orientation="vertical"
+            android:background="@drawable/button_shape4"
+            android:layout_columnWeight="1">
+
+            <Button
+                android:id="@+id/button_hot_map"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/tu"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:text="@string/hotmap"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </GridLayout>
     <com.baidu.mapapi.map.MapView
         android:id="@+id/mmap"
         android:layout_width="match_parent"
